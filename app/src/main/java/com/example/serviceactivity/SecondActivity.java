@@ -20,4 +20,11 @@ public class SecondActivity extends AppCompatActivity {
         startService(intent);
 
     }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+
+        Log.d(TAG, "onDestroy: "+this);
+    }
 }
